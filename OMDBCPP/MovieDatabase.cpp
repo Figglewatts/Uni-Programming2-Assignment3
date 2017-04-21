@@ -101,9 +101,9 @@ namespace omdb
 		// read it movie by movie
 		while (!is.eof())
 		{
-			Movie *m = new Movie();
-			is >> *m;
-			other.add(*m);
+			Movie m = Movie();
+			is >> m;
+			other.add(m);
 			is >> std::ws;
 		}
 		return is;
